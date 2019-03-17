@@ -1,0 +1,4 @@
+manufacturer = BMW, model = X5, year = 2005, price = 14000, mileage = 248000, fuelConsumption = 18.2, numberOfSeats = 5, currentPassengersCount = 1
+ manufacturer = Lada, model = Kalina, year = 2002, price = 3500, mileage = 748000, fuelConsumption = 7.4, numberOfSeats = 5, currentPassengersCount = 2
+manufacturer = VolksWagen, model = Transporter, year = 2008, price = 8900, mileage = 348000, fuelConsumption = 6.5, numberOfSeats = 9, currentPassengersCount = 4, currentCargoCount = 3, cargoPlaces = 6
+manufacturer = Iveco, model = Massif, year = 2006, price = 12500, mileage = 112000, fuelConsumption = 13.4, currentCargoCount = 3, cargoPlaces = 6
