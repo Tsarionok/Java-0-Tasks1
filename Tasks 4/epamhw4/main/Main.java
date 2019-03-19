@@ -1,20 +1,21 @@
 package epamhw4.main;
 
-import epamhw4.domain.Vehicle;
-import epamhw4.service.VehicleByFuelConsumption;
-import epamhw4.service.VehicleSearch;
+import epamhw4.entities.Vehicle;
+import epamhw4.actions.VehicleByFuelConsumption;
+import epamhw4.actions.VehicleSearch;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Double totalCost = 0.0;
-        List<Vehicle> vehicles = new LinkedList<>();
-        File file = new File("E:\\Java\\EPAM_HW_1\\src\\epamhw4\\service\\Obj.txt");
+        final int minYear = 2000, maxYear = 2010, minMiliage = 150_000, maxMiliage = 350_000;
+        double totalCost = 0.0;
+        List<Vehicle> vehicles = new ArrayList<>();
+        File file = new File("E:\\Java\\EPAM_HW_1\\src\\epamhw4\\actions\\Obj.txt");
         Scanner sc;
 
         try {
@@ -35,15 +36,19 @@ public class Main {
             System.out.println(v.toString());
             totalCost += v.getPrice();
         }
+
         System.out.println(" Total cost is: " + totalCost + "\n");
-        System.out.println(" Sorted by Fuel Consumption:");
+        System.out.println(" Sorting by fuel consumption:");
+
         vehicles.sort(new VehicleByFuelConsumption());
+
         for (Vehicle v : vehicles) {
             System.out.println(v.toString());
         }
+
         System.out.println("\nSorted by parameters range:");
-        VehicleSearch.searchByYear(2009, 2004, vehicles);
-        VehicleSearch.searchByMileage(200000, 350000, vehicles);
+        VehicleSearch.searchByYear(minYear, maxYear, vehicles);
+        VehicleSearch.searchByMileage(minMiliage, maxMiliage, vehicles);
 
         for (Vehicle v : vehicles) {
             System.out.println(v.toString());

@@ -1,0 +1,5 @@
+manufacturer = Audi, model = Q5, year = 1998, price = 13500, mileage = 538000, fuelConsumption = 22.4, numberOfSeats = 5, currentPassengersCount = 2
+ manufacturer = Mazda, model = Rx3, year = 2004, price = 4300, mileage = 372000, fuelConsumption = 8.4, numberOfSeats = 5, currentPassengersCount = 2
+manufacturer = Mercedes, model = GL, year = 2012, price = 17300, mileage = 124000, fuelConsumption = 16.5, numberOfSeats = 8, currentPassengersCount = 4, currentCargoCount = 3, cargoPlaces = 6
+manufacturer = Audi, model = Q5, year = 2009, price = 12345, mileage = 78000, fuelConsumption = 14.4, currentCargoCount = 3, cargoPlaces = 6
+manufacturer = Audi, model = Q5, year = 2009, price = 12345, mileage = 78000, fuelConsumption = 14.4, currentCargoCount = 3, cargoPlaces = 6
